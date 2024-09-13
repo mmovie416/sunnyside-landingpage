@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	font-weight: 600;
+}
+
+p,li{
+	font-family: 'Barlow',sans-serif;
+}
+
+h1,.testimonials-name{
+	font-family: 'Fraunces',sans-serif;
+	font-weight: 700;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+ul li .nav-link{
+	color:hsl(0, 0%, 100%);
+}
+
+ul li .nav-link:hover {
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 7px;
+    color: black;
+    
+}
+
+
+.navbar-nav li:nth-child(4) a{
+		background-color: hsl(0, 0%, 100%);
+		border-radius: 11px ;
+		color: black;
+	}
+
+
+.main{
+	height: 150em;
+	width: 80.5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main .jumbotron{
+	display: flex;
+
+}
+
+
+@keyframes UpDown{
+	0%{
+		transform: translateY(0);
+	}
+
+	50%{
+		transform: translateY(-25px);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+.main .jumbotron h1{
+	margin: auto;
+	color: white;
+	z-index: 1000;
+	animation: UpDown 1s infinite;
+}
+
+.main .jumbotron img{
+	position: absolute;
+	width: 80.5%;
+	height: 81.7%;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+}
+
+.content .transform{
+	display: grid;
+	grid-template-areas: 'txtTransform imageTransform';
+	margin-top: -138.1%;
+	width: 100%;
+	margin-left: -0.3%;
+/*	background-color: burlywood;*/
+}
+
+.content .transform .txtTransform{
+	grid-area: txtTransform;	
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	
+}
+
+.content .transform .imageTransform{
+	grid-area: imageTransform;
+}
+
+.content .transform .imageTransform img{
+	width: 94.7%;
+	margin-left: -17%;
+}
+
+/**/
+
+.content .standOut{
+	display: grid;
+	grid-template-areas: 'imagestandOut txtstandOut ';
+	width: 100%;
+	margin-left: 13.5%;
+}
+
+.content .standOut .txtstandOut{
+	grid-area: txtstandOut;	
+	width: 50%;
+	text-align: center;
+	margin-left: 5%;
+	margin-top: auto;
+	margin-bottom: auto;
+/*	background-color: limegreen;*/
+}
+
+.content .standOut .imagestandOut{
+	grid-area: imagestandOut;
+}
+
+.content .standOut .imagestandOut img{
+	width: 98%;
+	margin-left: -12.5%;
+}
+
+
+/**/
+	.content .photographyGraphic{
+		display: grid;
+		grid-template-areas: 'graphic photography ';
+		width: 100%;
+	}
+
+	.content .photographyGraphic .graphic img{
+		width: 83.7%;
+		margin-left: 16.5%;
+	}
+
+	.content .photographyGraphic .photography img{
+		width: 83.7%;
+	}
+
+	.content .photographyGraphic .graphic,.content .photographyGraphic .photography{
+		position: relative;
+	}
+
+	.content .photographyGraphic .graphic .graphicText{
+		position: absolute;
+		top: 59%;
+		left: 25%;
+		display: grid;
+	}
+
+	.content .photographyGraphic .graphic .graphicText p{
+		text-align: center;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		color: hsl(167, 40%, 24%);
+		
+	}
+
+	.content .photographyGraphic .graphic .graphicText h1{
+		margin-left: auto;
+		margin-right: auto;
+		color: hsl(212, 27%, 19%);
+	}
+
+	.content .photographyGraphic .photography .photographyText{
+		position: absolute;
+		top: 59%;
+		left: -5%;
+		display: grid;
+	}	
+
+	.content .photographyGraphic .photography .photographyText h1{
+		margin-left: auto;
+		margin-right: auto;
+		color: hsl(212, 27%, 19%);
+	}
+
+	.content .photographyGraphic .photography .photographyText p{
+		text-align: center;
+		width: 53%;
+		margin-left: auto;
+		margin-right: auto;
+		color: hsl(198, 62%, 26%);
+		
+	}
+/**/
+
+.testimonials{
+	margin-top: -27%;
+	width: 80.5%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.testimonials h1{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.testimonials-body .elipse{
+	border-radius: 50%;
+	width:30%;
+	height: 30%;
+	margin: auto;
+}
+
+.card-body{
+	margin-top: 5%;
+}
+
+.card-body p:nth-child(2){
+	margin-top: 15%;
+}
+
+.card-body p:nth-child(3){
+	margin-top: -5%;
+}
+
+.content-footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 9%;
+	width: 80.5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-footer img{
+	width: 25%;
+	height: 25%;
+
+}
+
+.footer{
+	display: flex;
+	background-color: #90d4c5;
+	flex-direction: column;
+	width: 80.5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer p{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	color: hsl(167, 40%, 24%);
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.footer .footermenu{
+	display: flex;
+	margin-top: 3%;
+}
+.footer .footermenu ul{
+	display: flex;
+	width: 35%;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.footer .footermenu ul li{
+	list-style: none;
+	color: hsl(168, 34%, 41%);
+}
+
+.footericon{
+	display: flex;
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
+.footericon .icon{
+	display: flex;
+	margin: auto;
+}
+
+.footericon .icon img:nth-child(1){
+	margin-left: -55%;
+}
+
+.footericon .icon img:nth-child(2), .footericon .icon img:nth-child(3), .footericon .icon img:nth-child(4){
+	margin-left: 51%;
+}
+
+
+@media only screen and (max-width:768px){
+
+	.navbar-nav li:nth-child(4) a{
+		background-color: hsl(51, 100%, 49%);
+		width: 25%;
+		margin-left:auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+		border-radius: 11px ;
+	}
+
+	.navbar-nav {
+		background-color: white;
+		margin-top: 3%;
+	}
+
+	.navbar-nav li a{
+		text-align: center;
+		margin-top: 1%;	
+	}
+
+	nav{
+      background-color: #3ebfff;
+      width: 100%;
+    }
+    
+
+	.main .jumbotron img{
+		width: 100%;
+		height: 81.7%;
+		left: 0;
+		right: 0;
+	}
+
+	.content{
+	display: flex;
+	flex-direction: column;
+}
+
+.content .transform{
+	display: grid;
+	grid-template-areas: 
+	'imageTransform'
+	'txtTransform';
+	margin-top: -390.1%;
+	width: 100%;
+	margin-left: -0.3%;
+}
+
+.content .transform .txtTransform{
+	grid-area: txtTransform;	
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding: 3%;
+	display: grid;
+}
+
+.content .transform .txtTransform h1{
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.content .transform .txtTransform p{
+	width: 74%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content .transform .imageTransform{
+	grid-area: imageTransform;
+}
+
+.content .transform .imageTransform img{
+	width: 117%;
+	margin-left: -9%;
+}
+
+/**/
+
+.content .standOut{
+	display: grid;
+	grid-template-areas: 'imagestandOut' 
+	'txtstandOut ';
+	width: 100%;
+	margin-left: 7.5%;
+	position: relative;
+}
+
+.content .standOut .txtstandOut{
+	grid-area: txtstandOut;
+	position: absolute;	
+	width: 100%;
+	text-align: center;
+	left: 7%;
+	margin: auto;
+/*	background-color: limegreen;*/
+display: grid;
+padding: 3%;
+}
+
+.content .standOut .txtstandOut h1{
+	
+	margin-left: 9%;
+	width: 50%;
+}
+.content .standOut .txtstandOut p{
+	width: 70%;
+
+}
+
+.content .standOut .imagestandOut{
+	grid-area: imagestandOut;
+}
+
+.content .standOut .imagestandOut img{
+	width: 117%;
+	
+}
+
+
+/**/
+	.content .photographyGraphic{
+		display: grid;
+		grid-template-areas: 'graphic' 
+		'photography ';
+		width: 100%;
+		margin-top: 55%;
+	}
+
+	.content .photographyGraphic .graphic img{
+		width: 117%;
+		margin-left: -11.5%;
+	}
+
+	.content .photographyGraphic .photography img{
+		width: 117%;
+		margin-left: -11.5%;
+	}
+
+	.content .photographyGraphic .graphic,.content .photographyGraphic .photography{
+		position: relative;
+	}
+
+	.content .photographyGraphic .graphic .graphicText{
+		position: absolute;
+		top: 59%;
+		left: -5%;
+		display: grid;
+	}
+
+	.content .photographyGraphic .graphic .graphicText p{
+		text-align: center;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content .photographyGraphic .graphic .graphicText h1{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content .photographyGraphic .photography .photographyText{
+		position: absolute;
+		top: 59%;
+		left: -5%;
+		display: grid;
+	}	
+
+	.content .photographyGraphic .photography .photographyText h1{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content .photographyGraphic .photography .photographyText p{
+		text-align: center;
+		width: 59%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+/**/
+
+.testimonials{
+	margin-top: 5%;
+	width: 80.5%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.testimonials h1{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.testimonials-parent{
+	display: grid;
+}
+
+.testimonials-body{
+	margin: auto;
+}
+
+.testimonials-body .elipse{
+	border-radius: 50%;
+	width:30%;
+	height: 30%;
+	margin: auto;
+}
+
+.card-body{
+	margin-top: 5%;
+}
+
+.card-body p:nth-child(2){
+	margin-top: 9%;
+}
+
+.card-body p:nth-child(3){
+	margin-top: -5%;
+}
+
+.content-footer{
+	display: grid;
+/*	justify-content: center;*/
+	grid-template-areas: 'milkbottles orange '
+						 'cone sugarcubes';
+	margin-top: 9%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-footer img{
+	width: 100%;
+	height: 100%;
+
+}
+
+.footer{
+	display: flex;
+	background-color: #90d4c5;
+	flex-direction: column;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer p{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	color: hsl(167, 40%, 24%);
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.footer .footermenu{
+	display: flex;
+	margin-top: 3%;
+}
+.footer .footermenu ul{
+	display: flex;
+	width: 75%;
+	justify-content: space-evenly;
+	margin: auto;
+}
+
+.footer .footermenu ul li{
+	list-style: none;
+}
+
+.footericon{
+	display: flex;
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
+.footericon .icon{
+	display: flex;
+	margin: auto;
+}
+
+.footericon .icon img:nth-child(1){
+	margin-left: -55%;
+}
+
+.footericon .icon img:nth-child(2), .footericon .icon img:nth-child(3), .footericon .icon img:nth-child(4){
+	margin-left: 51%;
+}
+
+}
+
+
+/**/
+
+@media only screen and (max-width:375px){
+
+	.navbar-nav li:nth-child(4) a{
+		background-color: hsl(51, 100%, 49%);
+		width: 25%;
+		margin-left:auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+		border-radius: 11px ;
+	}
+
+	.navbar-nav {
+		background-color: white;
+		margin-top: 3%;
+	}
+
+	.navbar-nav li a{
+		text-align: center;
+		margin-top: 1%;	
+	}
+	
+	nav{
+      background-color: #3ebfff;
+      width: 100%;
+    }
+    
+
+	.main .jumbotron img{
+		width: 100%;
+		height: 81.7%;
+		left: 0;
+		right: 0;
+	}
+
+	.content{
+	display: flex;
+	flex-direction: column;
+}
+
+.content .transform{
+	display: grid;
+	grid-template-areas: 
+	'imageTransform'
+	'txtTransform';
+	margin-top: -535%;
+	width: 100%;
+	margin-left: 5%;
+	
+}
+
+.content .transform .txtTransform{
+	grid-area: txtTransform;	
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding: 3%;
+	display: grid;
+}
+
+.content .transform .txtTransform h1{
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.content .transform .txtTransform p{
+	width: 74%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content .transform .imageTransform{
+	grid-area: imageTransform;
+}
+
+.content .transform .imageTransform img{
+	width: 117%;
+/*	margin-left: -15%;*/
+}
+
+/**/
+
+.content .standOut{
+	display: grid;
+	grid-template-areas: 'imagestandOut' 
+	'txtstandOut ';
+	width: 100%;
+	margin-left: 7.5%;
+	position: relative;
+}
+
+.content .standOut .txtstandOut{
+	position: absolute;
+	grid-area: txtstandOut;	
+	width: 100%;
+	text-align: center;
+	left: 9%;
+	margin: auto;
+	display: grid;
+	padding: 3%;
+}
+
+.content .standOut .txtstandOut h1{
+	
+	margin-left: 9%;
+	width: 50%;
+}
+.content .standOut .txtstandOut p{
+	width: 70%;
+
+}
+
+.content .standOut .imagestandOut{
+	grid-area: imagestandOut;
+}
+
+.content .standOut .imagestandOut img{
+	width: 117%;
+	
+}
+
+
+/**/
+	.content .photographyGraphic{
+		display: grid;
+		grid-template-areas: 'graphic' 
+		'photography ';
+		width: 100%;
+		margin-top: 85%;
+	}
+
+	.content .photographyGraphic .graphic img{
+		width: 117%;
+		margin-left: -11.5%;
+	}
+
+	.content .photographyGraphic .photography img{
+		width: 117%;
+		margin-left: -11.5%;
+	}
+
+	.content .photographyGraphic .graphic,.content .photographyGraphic .photography{
+		position: relative;
+	}
+
+	.content .photographyGraphic .graphic .graphicText{
+		position: absolute;
+		top: 59%;
+		left: -5%;
+		display: grid;
+	}
+
+	.content .photographyGraphic .graphic .graphicText p{
+		text-align: center;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content .photographyGraphic .graphic .graphicText h1{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content .photographyGraphic .photography .photographyText{
+		position: absolute;
+		top: 59%;
+		left: -5%;
+		display: grid;
+	}	
+
+	.content .photographyGraphic .photography .photographyText h1{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content .photographyGraphic .photography .photographyText p{
+		text-align: center;
+		width: 59%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+/**/
+
+	.testimonials{
+		margin-top: 5%;
+		width: 80.5%;
+	      margin-left: auto;
+	      margin-right: auto;
+	}
+
+	.testimonials h1{
+		text-align: center;
+		margin-bottom: 5%;
+	}
+
+	.testimonials-parent{
+		display: grid;
+	}
+
+	.testimonials-body{
+		margin: auto;
+	}
+
+	.testimonials-body .elipse{
+		border-radius: 50%;
+		width:30%;
+		height: 30%;
+		margin: auto;
+	}
+
+	.card-body{
+		margin-top: 5%;
+	}
+
+	.card-body p:nth-child(2){
+		margin-top: 9%;
+
+	}
+
+	.card-body p:nth-child(3){
+		margin-top: -5%;
+		margin-bottom: 9%;
+	}
+
+	.content-footer{
+		display: grid;
+	/*	justify-content: center;*/
+		grid-template-areas: 'milkbottles orange '
+							 'cone sugarcubes';
+		margin-top: 9%;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content-footer img{
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.footer{
+		display: flex;
+		background-color: #90d4c5;
+		flex-direction: column;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer p{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+		color: hsl(167, 40%, 24%);
+		font-weight: 700;
+		font-size: 30px;
+	}
+
+	.footer .footermenu{
+		display: flex;
+		margin-top: 3%;
+	}
+	.footer .footermenu ul{
+		display: flex;
+		width: 75%;
+		justify-content: space-evenly;
+		margin: auto;
+	}
+
+	.footer .footermenu ul li{
+		list-style: none;
+	}
+
+	.footericon{
+		display: flex;
+		margin-top: 7%;
+		margin-bottom: 7%;
+	}
+
+	.footericon .icon{
+		display: flex;
+		margin: auto;
+	}
+
+	.footericon .icon img:nth-child(1){
+		margin-left: -55%;
+	}
+
+	.footericon .icon img:nth-child(2), .footericon .icon img:nth-child(3), .footericon .icon img:nth-child(4){
+		margin-left: 51%;
+	}
+
+}
+
+
