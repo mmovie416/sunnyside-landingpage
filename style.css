@@ -319,6 +319,10 @@ ul li .nav-link:hover {
 		border-radius: 11px ;
 	}
 
+	ul li .nav-link{
+		color:hsl(232, 10%, 55%);
+	}
+
 	.navbar-nav {
 		background-color: white;
 		margin-top: 3%;
@@ -614,6 +618,10 @@ padding: 3%;
 		margin-right: auto;
 		margin-bottom: 5%;
 		border-radius: 11px ;
+	}
+
+	ul li .nav-link{
+		color:hsl(232, 10%, 55%);
 	}
 
 	.navbar-nav {
